@@ -1,0 +1,19 @@
+version: 2
+
+exposures:
+  - name: Executive Dashboard
+    type: dashboard
+    maturity: low
+    url: https://0cc189de.us1a.app.preset.io/superset/dashboard/p/ZEpNypwOW5M/
+    description: Executive Dashboard about Airbnb listings and hosts.
+
+
+    depends_on:
+      - ref('dim_listings_cleansed')
+      - ref('mart_fullmoon_reviews')
+
+
+    owner: 
+      name: Christian L
+
+
